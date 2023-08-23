@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+        /* HEADER SECTION */
+
+header {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+header article {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header article a {
+    color: hsl(236, 13%, 42%);
+    margin-right: 2rem;
+    text-decoration: none;
+}
+#Menu {
+    display: none;
+}
+
+        /* MAIN SECTION */
+
+        /* FIRST-CHILD ARTICLE */
+
+main article:first-child {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 815px 337px;
+    column-gap: 1rem;
+    margin-bottom: 3rem;
+}
+main article:first-child div {
+    display: grid;
+    grid-template-columns: 440px 390px;
+    column-gap: 15px;
+    margin-top: 1.5rem;
+}
+main article:first-child div h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 3.95rem;
+    padding-right: 4rem;
+}
+main article:first-child div p {
+    color: hsl(236, 13%, 42%);
+    line-height: 1.5rem;
+    padding-right: 3rem;
+}
+main article:first-child div button {
+    border: none;
+    letter-spacing: 5px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 2.7rem;
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+}
+.FAQ {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    height: 520px;
+    padding: 2rem 2.5rem 0rem 1.4rem;
+}
+.FAQ h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+.FAQ h4 {
+    font-size: 17px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.FAQ p {
+    color:hsla(233, 8%, 79%, 0.877);
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+main article:first-child li {
+    list-style-type: none;
+    border-top: 1px solid hsla(233, 8%, 79%, 0.418);;
+}
+main article:first-child li:first-child {
+    border-top: none;
+}
+
+        /* SECOND-CHILD ARTICLE */
+
+main article:last-child {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
+    column-gap: 10px;
+    margin-bottom: 8rem;
+}
+main article:last-child figure {
+    display: flex;
+    flex-direction: row;
+}
+main article:last-child img{
+    margin-right: 1.5rem;
+}
+main article:last-child h4 {
+    font-size: 30px;
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 0.8rem;
+}
+main article:last-child h5 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+main article:last-child p {
+    color: hsl(236, 13%, 42%);
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding-right: 3.5rem;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        padding-left: 3rem;
+    }
+
+            /* HEADER SECTION */
+
+    header {
+        display: flex;
+    }
+    header article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 290px;
+    }
+    #Menu {
+        color: black;
+        display: block;
+        font-size: 20px;
+    }
+    .Navigation {
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 7.25rem;
+        left: 0rem;
+        transition: all 0.5s linear;
+        transform: translateY(-200%);
+        width: 375px;
+    }
+    header article a {
+        background-color: white;
+        border-bottom: 1px solid hsl(240, 100%, 5%);
+        color: black;
+        font-family: 'Instrument Serif', serif;
+        font-size: 18px;
+        line-height: 2rem;
+        margin: auto;
+        padding-left: 2rem;
+        text-align: center;
+        width: 375px;
+    }
+    header article a:hover {
+        border-radius: 40px;
+        background-color: hsl(240, 100%, 5%);;
+        color: white;
+        margin: auto;
+        width: 370px;
+    }
+
+            /* FIRST-CHILD ARTICLE */
+
+    main article:first-child {
+        width: 375px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 370px;
+    }
+    main article:first-child section {
+        width: 330px;
+    }
+    main article:first-child img {
+        content: url(../Images/News_Homepage/image-web-3-mobile.jpg);
+        width: 330px;
+    }
+    main article:first-child div {
+        display: flex;
+        flex-direction: column;
+    }
+    main article:first-child div h1 {
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+        padding-right: 0rem;
+    }
+    main article:first-child div p {
+        font-size: 16px;
+        color: hsl(236, 13%, 42%);
+        line-height: 2rem;
+        padding-right: 1rem;
+    }
+    main article:first-child div button {
+        font-size: 16px;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 0.8rem 1.8rem;
+    }
+    .FAQ {
+        padding-right: 1rem;
+    }
+    main article:first-child li:first-child p {
+        padding-right: 1rem;
+    }
+
+            /* SECOND-CHILD ARTICLE */
+
+    main article:last-child {
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    main article:last-child img{
+        width: 120px;
+        margin-right: 1.2rem;
+    }
+    main article:last-child section {
+        margin-top: 2rem;
+    }
+    main article:last-child h5 {
+        font-size: 16px;
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+    }
+    main article:last-child p {
+        color: hsl(236, 13%, 42%);
+        font-size: 14px;
+        line-height: 1.5rem;
+        padding-right: 0rem;
+    }
+    .ShowNavigation {
+        transform: translateY(0%);
+    }
+}
+
